@@ -84,7 +84,7 @@ const updateRecord = (id) => {
     }),
     `https://api.cloudflare.com/client/v4/zones/${process.env.INPUT_ZONE}/dns_records/${id}`,
   ]);
-'
+
   if (status !== 0) {
     process.exit(status);
   }
